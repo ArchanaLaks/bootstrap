@@ -1,0 +1,649 @@
+<!-- <div class="game">
+  <input type="checkbox" id="duck1" (change)="updateScore()">
+  <label for="duck1" class="duck"></label>
+
+  <input type="checkbox" id="duck2" (change)="updateScore()">
+  <label for="duck2" class="duck"></label>
+
+  <input type="checkbox" id="duck3" (change)="updateScore()">
+  <label for="duck3" class="duck"></label>
+
+  <input type="checkbox" id="duck4" (change)="updateScore()">
+  <label for="duck4" class="duck"></label>
+
+  <input type="checkbox" id="duck5" (change)="updateScore()">
+  <label for="duck5" class="duck"></label>
+
+  <div class="score"></div>
+  <div class="game-over" [ngClass]="{'show': allDucksFinished}"><p>Game Over</p></div>
+  <div class="mouse"></div>
+
+
+</div>
+
+<hr>
+
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Accordion class
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>Lorem ipsum dolor sit amet.</strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam, quia. Doloribus deserunt quia laudantium commodi? Repudiandae aperiam ducimus incidunt laborum quidem distinctio ratione, impedit officia.
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="custom-accordion" >
+  <div class="custom-accordion-item">
+    <div class="custom-accordion-header" (click)="toggleItem()">
+      <button class="custom-accordion-button" type="button">
+        Accordion without Bootstrap
+      </button>
+    </div>
+    <div  class="custom-accordion-collapse" [ngClass]="{'collapse': !isOpen}" [style.maxHeight]="isOpen ? '1000px' : '0px'">
+      <div class="custom-accordion-body">
+        <strong>Lorem ipsum dolor sit amet.</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi delectus accusantium laudantium. Iusto consequatur excepturi quaerat itaque incidunt, recusandae nulla nihil enim qui quia nobis sit eveniet nemo. Perferendis, atque!
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+<button type="button" class="btn btn-primary">
+  Notifications <span class="badge text-bg-secondary">4</span>
+</button>
+
+<button type="button" class="notify">
+  Notifications <span class="textbox">4</span>
+</button>
+
+<hr>
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item"><a href="#">Library</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Data</li>
+  </ol>
+</nav>
+
+<nav>
+  <ol style="display: flex;">
+    <li><a href="#" class="list">Home </a></li>&nbsp;&nbsp; <span>/</span>&nbsp;&nbsp;
+    <li><a href="#" class="list">Library </a></li>&nbsp;&nbsp; <span>/</span>&nbsp;&nbsp;
+    <li><a href="#" class="list2">Data</a></li>
+
+
+  </ol>
+</nav>
+<hr>
+<div class="btn-group" role="group" aria-label="Basic example">
+  <button type="button" class="btn btn-primary">Left</button>
+  <button type="button" class="btn btn-primary">Middle</button>
+  <button type="button" class="btn btn-primary">Right</button>
+</div>
+<br>
+<br>
+<div style="margin: 5px;">
+  <button class="primary left">Left</button>
+  <button class="primary">Middle</button>
+  <button class="primary right">Right</button>
+</div>
+
+<hr>
+<button type="button" class="btn btn-primary position-relative">
+  Inbox
+  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+    99+
+    <span class="visually-hidden">unread messages</span>
+  </span>
+</button>
+<br>
+<br>
+
+
+<button class="unread-messages">Inbox<span>99+</span></button>
+<hr>
+
+
+<div class="card" style="width: 18rem;">
+  <img src="https://cdn.pixabay.com/photo/2022/05/18/23/21/dog-7206321_640.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">An item</li>
+    <li class="list-group-item">A second item</li>
+    <li class="list-group-item">A third item</li>
+  </ul>
+  <div class="card-body">
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
+  </div>
+</div>
+<br>
+<div class="custom-card" >
+  <img src="https://cdn.pixabay.com/photo/2022/05/18/23/21/dog-7206321_640.jpg" class="custom-card-img-top" alt="...">
+  <div class="custom-card-body">
+    <h5 class="custom-card-title">Card title</h5>
+    <p >Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+  <hr>
+  <ul class="custom-card-list">
+    <li class="custom-card-list-item">An item</li>
+    <hr>
+    <li class="custom-card-list-item">A second item</li>
+    <hr>
+    <li class="custom-card-list-item">A third item</li>
+    <hr>
+  </ul>
+  <div class="custom-card-link">
+    <a href="#" class="custom-card-link-item">Card link</a>
+    <a href="#" class="custom-card-link-item">Another link</a>
+  </div>
+</div>
+
+<hr>
+
+ <div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://cdn.pixabay.com/photo/2022/05/18/23/21/dog-7206321_640.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://www.ardeaprints.com/t/172/picture-no-10893704-10485100.jpg.webp" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://www.mediastorehouse.com/p/164/fall-tibetan-terrier-47-20154619.jpg.webp" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div> -->
+
+<!-- <div  class="custom-carousel slide">
+  <div class="custom-carousel-inner">
+    <div class="custom-carousel-item active">
+      <img src="https://cdn.pixabay.com/photo/2022/05/18/23/21/dog-7206321_640.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="custom-carousel-item">
+      <img src="https://www.ardeaprints.com/t/172/picture-no-10893704-10485100.jpg.webp" class="d-block w-100" alt="...">
+    </div>
+    <div class="custom-carousel-item">
+      <img src="https://www.mediastorehouse.com/p/164/fall-tibetan-terrier-47-20154619.jpg.webp" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="custom-carousel-control-prev" type="button" (click)="prevSlide()">
+    Previous
+  </button>
+  <button class="custom-carousel-control-next" type="button" (click)="nextSlide()">
+    Next
+  </button>
+</div> -->
+
+<!--<div class="maindiv"></div>
+
+
+<hr>
+  <div class="containe">
+    <span class="slider" id="slider1"></span>
+    <span class="slider" id="slider2"></span>
+    <span class="slider" id="slider3"></span>
+    <span class="slider" id="slider4"></span>
+    <span class="slider" id="slider5"></span>
+    <span class="slider" id="slider6"></span>
+    <span class="slider" id="slider7"></span>
+    <span class="slider" id="slider8"></span>
+
+
+    <div class="imgContainer">
+      <div class="slide_div" id="slide_1"></div>
+      <img src="https://i.pinimg.com/736x/58/66/91/586691ad309b88a140ae05a2e63e8223.jpg" alt="" class="img" id="img1">
+      <a href="#slider1" class="button" id="button1"></a>
+    </div>
+
+    <div class="imgContainer">
+      <div class="slide_div" id="slide_2"></div>
+      <img src="https://i.pinimg.com/564x/9b/1c/ee/9b1ceef7c42add1f90ef1af7e38d7c72.jpg" alt="" class="img" id="img2">
+      <a href="#slider2" class="button" id="button2"></a>
+    </div>
+
+    <div class="imgContainer">
+      <div class="slide_div" id="slide_3"></div>
+      <img src="https://i.pinimg.com/564x/85/a8/e1/85a8e17a615d21192d9aeab16aa7c7f1.jpg" alt="" class="img" id="img3">
+      <a href="#slider3" class="button" id="button3"></a>
+    </div>
+
+    <div class="imgContainer">
+      <div class="slide_div" id="slide_4"></div>
+      <img src="https://i.scdn.co/image/ab67616d00001e02452809267776437c85a069f0" alt="" class="img" id="img4">
+      <a href="#slider4" class="button" id="button4"></a>
+    </div>
+
+    <div class="imgContainer">
+      <div class="slide_div" id="slide_5"></div>
+      <img src="https://64.media.tumblr.com/a7a1e869442fa84177d3c1036808ff31/tumblr_pazyjjH5HM1wcpk4bo3_400.png" alt="" class="img" id="img5">
+      <a href="#slider5" class="button" id="button5"></a>
+    </div>
+
+    <div class="imgContainer">
+      <div class="slide_div" id="slide_6"></div>
+      <img src="https://pbs.twimg.com/media/DYQwCcHXcAApaOO.jpg" alt="" class="img" id="img6">
+      <a href="#slider6" class="button" id="button6"></a>
+    </div>
+
+    <div class="imgContainer">
+      <div class="slide_div" id="slide_7"></div>
+      <img src="https://i.scdn.co/image/ab67616d00001e0200a1fdebbeba486e6e0bdafd" alt="" class="img" id="img7">
+      <a href="#slider7" class="button" id="button7"></a>
+    </div>
+
+    <div class="imgContainer">
+      <div class="slide_div" id="slide_8"></div>
+      <img src="https://i.scdn.co/image/ab67616d00001e02880245c4ba443ff93c5ddb2a" alt="" class="img" id="img8">
+      <a href="#slider8" class="button" id="button8"></a>
+    </div>
+
+  </div>
+
+
+  <hr>
+
+<div class="hero">
+  <div class="sky">
+    <div class="city"></div>
+
+    <div class="highway"></div>
+    <div class="car">
+      <img src="https://www.pngall.com/wp-content/uploads/14/Cartoon-Car-PNG-Image-File.png" alt="">
+    </div>
+
+    <div class="wheel">
+      <img src="https://pngimg.com/uploads/car_wheel/car_wheel_PNG23298.png" alt="" class="fornt-wheel">
+      <img src="https://pngimg.com/uploads/car_wheel/car_wheel_PNG23298.png" alt="" class="back-wheel">
+
+    </div>
+
+  </div>
+</div>
+
+<hr>
+
+<div class="image-rotater">
+  <div class="image-slider">
+    <span style="--i:1;"><img src="https://cdn.pixabay.com/photo/2018/01/12/10/19/fantasy-3077928_640.jpg" alt=""></span>
+    <span style="--i:2;"><img src="https://media.istockphoto.com/id/467713480/photo/beautiful-woman-jumping-in-a-fantasy-landscape.jpg?s=612x612&w=0&k=20&c=xwe9LupCduqCTYbBHSp2d5L7wnyZBcR0C1G6ryITnho=" alt=""></span>
+    <span style="--i:3;"><img src="https://media.istockphoto.com/id/1127410633/photo/floating-angel.jpg?s=612x612&w=0&k=20&c=vnBnwMz5gdnh0nv3-5nFZZU3sB0hSbR5Ue1J8rmalws=" alt=""></span>
+    <span style="--i:4;"><img src="https://www.shutterstock.com/image-illustration/chinese-style-fantasy-scenes3d-rendering-260nw-647884516.jpg" alt=""></span>
+    <span style="--i:5;"><img src="https://p0.pxfuel.com/preview/447/422/423/girl-castle-woman-fantasy.jpg" alt=""></span>
+    <span style="--i:6;"><img src="https://wallpaperaccess.com/full/1265878.jpg" alt=""></span>
+    <span style="--i:7;"><img src="https://t4.ftcdn.net/jpg/05/40/82/11/360_F_540821186_5gCn7JTDZrcK1XJlvR3Xeg4TTZAzvONC.jpg" alt=""></span>
+    <span style="--i:8;"><img src="https://wallpapers.com/images/hd/fantasy-island-desktop-lsjkr6wg7ctq97qv.jpg" alt=""></span>
+
+  </div>
+</div>
+
+
+<hr>
+<div class="panda-walker">
+  <div class="panda"></div>
+  <div class="cat"></div>
+  <div class="mice"></div>
+</div>
+
+<hr>
+ -->
+<!-- <div class="day-night">
+  <div class="navigation">
+    <ul class="dn-ul">
+      <li class="list">
+        <a class="dn-a">
+          <span class="icon">
+            <i class="fa fa-home"></i>
+          </span>
+          <span class="text">Home</span>
+        </a>
+      </li>
+      <li class="list">
+        <a class="dn-a">
+          <span class="icon">
+            <i class="fa fa-user"></i>
+          </span>
+          <span class="text">profile</span>
+        </a>
+      </li>
+      <li class="list">
+        <a class="dn-a">
+          <span class="icon">
+            <i class="fa fa-wechat"></i>
+          </span>
+          <span class="text">message</span>
+        </a>
+      </li>
+      <li class="list">
+        <a class="dn-a">
+          <span class="icon">
+            <i class="fa fa-camera"></i>
+          </span>
+          <span class="text">photo</span>
+        </a>
+      </li>
+      <li class="list">
+        <a class="dn-a">
+          <span class="icon">
+            <i class="fa fa-circle"></i>
+          </span>
+          <span class="text">settings</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div> -->
+
+<!-- day to night converter -->
+<div class="toggler_d-n">
+    <label>
+      <input type="checkbox">
+      <i class="fa fa-sun-o"></i>
+      <i class="fa fa-moon-o"></i>
+      <span class="changer"></span>
+      <span class="animatebg"></span>
+    </label>
+</div>
+
+<!-- download button animation -->
+<div class="animateButton">
+  <div class="container">
+    <a class="button_a">
+      <div class="button_content">
+        <span class="button_text">Download</span>
+        <i class="fa fa-cloud-download button_icon"></i>
+        <div class="button_reflection-1"></div>
+        <div class="button_reflection-2"></div>
+      </div>
+      <img src="https://static.vecteezy.com/system/resources/thumbnails/001/189/165/small/star.png" alt="" class="button_star-1">
+      <img src="https://static.vecteezy.com/system/resources/thumbnails/001/189/165/small/star.png" alt="" class="button_star-2">
+      <img src="https://www.pngall.com/wp-content/uploads/13/Circle-Logo-PNG-Photos.png" alt="" class="button_circle-1">
+      <img src="https://www.pngall.com/wp-content/uploads/13/Circle-Logo-PNG-Photos.png" alt="" class="button_circle-2">
+      <img src="https://www.freepnglogos.com/uploads/diamond-png/diamond-gemstone-black-icon-transparent-png-svg-vector-37.png" alt="" class="button_diamond-1">
+      <img src="https://www.freeiconspng.com/thumbs/triangle-png/triangle-png-28.png" alt="" class="button_triangle-1">
+      <div class="button_shadow"></div>
+    </a>
+  </div>
+</div>
+
+<!-- play buttons animation -->
+
+<div class="animateButton2">
+  <div>
+    <a  class="button_a2">
+      <span class="button_text">
+        play
+      </span>
+      <img src="https://png.pngtree.com/png-clipart/20230814/original/pngtree-blue-cone-on-white-illustration-pointy-shape-vector-picture-image_10625929.png" alt="" class="button_cone">
+      <img src="https://static.vecteezy.com/system/resources/previews/026/548/069/non_2x/3d-torus-shape-free-png.png" alt="" class="button_torus">
+      <img src="https://cdn-icons-png.flaticon.com/512/6181/6181078.png" alt="" class="button_icosahedron">
+      <img src="https://static.vecteezy.com/system/resources/previews/024/851/112/original/blue-sphere-transparent-background-png.png" alt="" class="button_sphere">
+
+    </a>
+  </div>
+</div>
+
+
+<!-- rotater border button -->
+
+  <a href="" class="animateButton3">
+    <span class="fspan"></span>
+    <span class="sspan"></span>
+    <span class="tspan"></span>
+    <span class="fspan"></span>
+  </a>
+
+  <!-- transaction  -->
+
+<div class="trans">
+  <div class="container">
+    <div class="left-side">
+      <div class="card">
+        <div class="card-line"></div>
+        <div class="buttons"></div>
+      </div>
+      <div class="post">
+        <div class="post-line"></div>
+        <div class="screen">
+          <div class="dollar">$</div>
+        </div>
+        <div class="numbers"></div>
+        <div class="numbers-line2"></div>
+      </div>
+    </div>
+    <div class="right-side">
+      <div class="new">New Transaction</div> 
+    </div>
+  </div>
+</div>
+
+
+<!-- loader on click  -->
+
+<div class="buttons-box" style=" width:300px;height: 500px;">
+  <div class="loader">
+    <span [ngClass]="{ 'word-loading': isLoading }" class="word" (click)="onClick()">{{ buttonText }}</span>
+    <span><i [ngClass]="{ 'fa-spin': isLoading, 'fa': true, 'fa-spinner': isLoading, 'fa-power-off': !isLoading }"></i></span>
+  </div>
+
+
+<!-- button on click loading for 5s and submit button -->
+  <div class="onchange">
+    <div class="btn btn-outline-danger" [ngClass]="{'word': load , 'clicked': load , 'another-class': showAnotherClass}" (click)="buttonChanger()">{{word}}</div>
+  </div>
+
+
+<!-- emoji creator button -->
+  <div class="emoji">
+    <div class="emoji-face">
+      <div class="eyes">
+        <div class="eye1"></div>
+        <div class="eye2"></div>
+      </div>
+      <div class="mouth">
+        <div class="toungue"></div>
+      </div>
+    </div>
+  </div>
+  <br><br>
+
+
+  <!-- 3 in 1 button -->
+<div class="button three-in-one" (mouseleave)="resetHover()">
+  <span class="main"><a (mouseenter)="showTopButton()">Download</a></span>
+  <span class="top" [ngClass]="{'show': showTop, 'hide': !showTop}"><a (click)="handleTopButtonClick()">TOP</a></span>
+  <span class="bottom" [ngClass]="{'show': showBottom, 'hide': !showBottom}"><a (click)="handleBottomButtonClick()">Bottom</a></span>
+</div>
+<br><br>
+
+<!-- bubble button -->
+<a class="btn btn-bubble">Bubble Button</a>
+</div>
+
+
+
+<!-- weater changer gifs -->
+<div class="weather-change" [style.background-image]="weatherBackground" [class]="weatherClass">
+  <div class="climate-button" (click)="toggleClimate()">
+    <div class="climate-changer" [class.move-right]="isToggled" ></div>
+  </div>
+</div>
+
+
+<!-- slider a div button -->
+<div>
+  <a  class="wrapper"><span>Hover Me!</span></a>
+</div>
+
+
+<!-- half way a buttom mover  -->
+<div id="holder">
+
+  <div class="button-rg">
+      <p class="btnText">READY?</p>
+      <div class="btnTwo">
+        <p class="btnText2">GO!</p>
+      </div>
+   </div>
+  
+  <div class="button-rg">
+      <p class="btnText">CANCEL</p>
+      <div class="btnTwo">
+        <p class="btnText2">X</p>
+      </div>
+   </div>
+  </div>
+
+  <!-- nav mover -->
+  <div class="list">
+    <ul class="list-ul">
+      <li class="list-li">home</li>
+      <li class="list-li">products</li>
+      <li class="list-li">services</li>
+      <li class="list-li">contact</li>
+    </ul>
+  </div>
+
+<!-- filling colors to icons on hover -->
+
+<div class="icons">
+  <ul class="icons-ul">
+      <li class="icons-li"><a class="icons-a"><i class="fab fa-instagram instagram"></i></a></li>
+      <li class="icons-li"><a  class="icons-a"><i class="fab fa-whatsapp whatsapp"></i></a></li>
+      <li class="icons-li"><a  class="icons-a"><i class="fab fa-twitter twitter"></i></a></li>
+  </ul>
+</div>
+
+
+<!-- 2nd border on hover -->
+<div class="border-effects">
+  <a  class="fancy-btn">Hover me lad.</a> 
+</div>
+<br>
+
+
+
+<!-- pusher button -->
+<div>
+  <button class="pushable">
+    <span class="front">
+      Push me
+    </span>
+  </button>
+</div>
+
+<br>
+
+<!-- insider slider background -->
+<div class="hoverbox">
+  <button class="animated-button">Hover Me</button>&nbsp;&nbsp;
+  <div class="button_slide slide_left">BUTTON: SLIDE INSIDE </div>
+</div>  
+
+
+<br>
+
+<!-- animation stopper on hover -->
+<div class="wrap">
+  <button class="stopper">
+    Hover Here! 
+    <span class="span1"></span>
+    <span class="span1"></span>
+    <span class="span1"></span>
+    <span class="span1"></span>
+  </button>
+</div>
+
+<br>
+
+<!-- nav pusher -->
+<div class="nav-animation">
+  <ul class="nav-ul">
+    <li class="nav-li"><span class="nav-span">home</span></li>
+    <li class="nav-li"><span class="nav-span">products</span></li>
+    <li class="nav-li"><span class="nav-span">services</span></li>
+    <li class="nav-li"><span class="nav-span">contact</span></li>
+  </ul>
+</div>
+
+
+
+<!-- border filler -->
+<div class="data-container">
+  <span class="btn-hover">Hover Me </span>
+</div>
+
+<!-- shine on hover buttons -->
+<div class="nav-real">
+  <ul class="shine-ul">
+    <li class="shine-li">
+      <a class="shine-a">
+        <i class="fab fa-edge"></i>
+      </a>
+    </li>
+    <li class="shine-li">
+      <a class="shine-a">
+        <i class="fab fa-firefox"></i>
+      </a>
+      </li>
+    <li class="shine-li">
+      <a class="shine-a">
+        <i class="fab fa-chrome"></i>
+      </a>
+      
+    </li>
+    <li class="shine-li">
+      <a class="shine-a">
+        <i class="fab fa-opera"></i>
+      </a> 
+    </li>
+  </ul>
+</div>
+
+<br>
+
+
+<!-- blind closing button -->
+<div class="btn-screen">
+  <div class="bg-screen"></div>
+  <span class="noselect">Close the blinds</span>
+  <div class="string"></div>
+  <div class="string-end"></div>
+  <div class="blind" id="b1"></div>
+  <div class="blind" id="b2"></div>
+  <div class="blind" id="b3"></div>
+  <div class="blind" id="b4"></div>
+  <div class="blind" id="b5"></div>
+  <div class="blind" id="b6"></div>
+  <div class="blind" id="b7"></div>
+  <div class="blind" id="b8"></div>
+  <div class="blind" id="b9"></div>
+  <div class="blind" id="b10"></div>
+  <div class="blind" id="b11"></div>
+  <div class="blind" id="b12"></div>
+  <div class="blind" id="b13"></div>
+  <div class="blind" id="b14"></div>
+  <div class="blind" id="b15"></div>
+  <div class="blind" id="b16"></div>
+</div>
+
+<br><br><br><br><br>
+<app-buttons></app-buttons>

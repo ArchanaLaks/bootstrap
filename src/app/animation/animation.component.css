@@ -1,0 +1,405 @@
+/* zommer on clicking */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body,
+html {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  line-height: 0;
+  font-weight: 400;
+  color: white;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: black;
+  margin: 5%;
+}
+
+a {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background: url("https://picsum.photos/id/517/1500/1500");
+  background-position: center;
+  text-shadow: 0px 0px 10px hotpink, 1px 1px 0px hotpink, -1px -1px 0px hotpink,
+    1px 1px 0px black;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+a:active {
+  transform: scale(0.85);
+  font-size: 100% !important;
+  transition: all 0.1s ease-in-out;
+}
+
+a::before {
+  position: absolute;
+  bottom: -90px;
+  width: 200px;
+  height: auto;
+  line-height: 20pt;
+  font-size: 20pt;
+  content: "multi-step css only ♥ button";
+  text-align: center;
+}
+
+a::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: hotpink;
+  mix-blend-mode: color;
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
+}
+
+input {
+  display: none;
+}
+
+label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  display: none;
+}
+
+label:hover {
+  cursor: pointer;
+}
+
+input:nth-child(1):checked ~ a {
+  background-size: 100%;
+  width: 120px;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 20pt;
+  color: white;
+}
+
+input:nth-child(1):checked ~ a::after {
+  opacity: 1;
+  background: white;
+  border-radius: 5px;
+}
+
+input:nth-child(1):checked ~ a > label:nth-child(2) {
+  display: initial;
+}
+
+input:nth-child(2):checked ~ a {
+  background-size: 125%;
+  width: 136px;
+  height: 52px;
+  font-size: 25pt;
+  border-radius: 10px;
+  color: #ffc8ec;
+  outline: 1px solid hotpink;
+}
+
+input:nth-child(2):checked ~ a:active {
+  font-size: 180% !important;
+}
+
+input:nth-child(2):checked ~ a::after {
+  opacity: 0.2;
+  border-radius: 10px;
+}
+
+input:nth-child(2):checked ~ a > label:nth-child(3) {
+  display: initial;
+}
+
+input:nth-child(3):checked ~ a {
+  background-size: 155%;
+  width: 126px;
+  height: 68px;
+  font-size: 35pt;
+  border-radius: 15px;
+  color: #ff9ede;
+  outline: 1px solid hotpink;
+  outline-offset: 5px;
+  text-shadow: 1px 1px 0px black, -1px -1px 0px black, 1px -1px 0px black,
+    -1px 1px 0px black;
+}
+
+input:nth-child(3):checked ~ a:active {
+  font-size: 280% !important;
+}
+
+input:nth-child(3):checked ~ a::after {
+  opacity: 0.4;
+  border-radius: 15px;
+}
+
+input:nth-child(3):checked ~ a > label:nth-child(4) {
+  display: initial;
+}
+
+input:nth-child(4):checked ~ a {
+  background-size: 185%;
+  width: 116px;
+  height: 88px;
+  font-size: 50pt;
+  border-radius: 20px;
+  color: #ff73cf;
+  outline: 2px solid hotpink;
+  outline-offset: 15px;
+  text-shadow: 1px 1px 0px black, -1px -1px 0px black, 1px -1px 0px black,
+    -1px 1px 0px black;
+}
+
+input:nth-child(4):checked ~ a:active {
+  font-size: 380% !important;
+}
+
+input:nth-child(4):checked ~ a::after {
+  opacity: 0.6;
+  border-radius: 20px;
+}
+
+input:nth-child(4):checked ~ a > label:nth-child(5) {
+  display: initial;
+}
+
+input:nth-child(5):checked ~ a {
+  background-size: 210%;
+  width: 114px;
+  height: 114px;
+  font-size: 70pt;
+  border-radius: 25px;
+  color: #ff4bc2;
+  outline: 3px solid hotpink;
+  outline-offset: 15px;
+  text-shadow: 1px 1px 0px black, -1px -1px 0px black, 1px -1px 0px black,
+    -1px 1px 0px black;
+}
+
+input:nth-child(5):checked ~ a:active {
+  font-size: 480% !important;
+}
+
+input:nth-child(5):checked ~ a::after {
+  opacity: 0.8;
+  border-radius: 25px;
+  backdrop-filter: blur(1px);
+}
+
+input:nth-child(5):checked ~ a > label:nth-child(6) {
+  display: initial;
+}
+
+input:nth-child(6):checked ~ a {
+  background-size: 250%;
+  width: 148px;
+  height: 148px;
+  font-size: 100pt;
+  border-radius: 30px;
+  color: #ff29b6;
+  outline: 3px solid hotpink;
+  outline-offset: 20px;
+}
+
+input:nth-child(6):checked ~ a:active {
+  font-size: 580% !important;
+}
+
+input:nth-child(6):checked ~ a::after {
+  opacity: 0.9;
+  border-radius: 30px;
+  backdrop-filter: blur(2px);
+}
+
+input:nth-child(6):checked ~ a > label:nth-child(7) {
+  display: initial;
+}
+
+input:nth-child(7):checked ~ a {
+  background-size: 300%;
+  width: 192px;
+  height: 192px;
+  font-size: 140pt;
+  border-radius: 35px;
+  color: #ff00a8;
+  outline: 4px solid #ff00a8;
+  outline-offset: 20px;
+}
+
+input:nth-child(7):checked ~ a:active {
+  font-size: 680% !important;
+}
+
+input:nth-child(7):checked ~ a::after {
+  opacity: 1;
+  border-radius: 35px;
+  backdrop-filter: blur(4px);
+}
+
+input:nth-child(7):checked ~ a > label:nth-child(1) {
+  display: initial;
+}
+
+
+
+/* glowing effects on hover */
+
+.glowing-effect{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+}
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+
+/* cloud button creation */
+.cloud-button{
+  background-image: url(https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=1600);
+  background-size: cover;
+  background-position: 50% 50%;
+  min-height: 100vh;
+  font-family: Raleway, serif;
+  position: relative;
+
+  &:after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      background: rgba(0, 0, 0, 0.2);
+      z-index: 1;
+  }
+}
+
+svg {
+  width: 80vw;
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  max-width: 430px;
+  transform: translateY(-50%) translateX(-50%);
+  z-index: 2;
+  filter: drop-shadow(0 0 40px rgba(0, 0, 0, 0.3));
+
+  path {
+      cursor: pointer;
+      animation: blob 2s infinite forwards;
+      transform-origin: 50% 50%;
+
+      &:hover {
+          fill: #fafafa;
+      }
+  }
+
+  text {
+      font-size: 45px;
+  }
+}
+
+@keyframes blob {
+  25% {
+      d: path(
+          "M 90 210 C 90 180 110 160 130 160 C 160 160 180 140 200 130 C 230 120 270 100 290 140 C 310 170 340 100 360 140 C 370 160 390 180 390 210 C 390 240 380 290 350 280 C 330 270 300 280 280 290 C 260 300 230 300 220 290 C 200 270 160 310 140 280 C 130 260 90 240 90 210 "
+      );
+      transform: rotate(-5deg);
+  }
+  50% {
+      d: path(
+          "M 90 210 C 90 180 100 150 120 130 C 150 100 180 140 200 130 C 230 120 270 100 290 140 C 300 160 330 130 360 140 C 390 150 390 180 390 210 C 390 240 380 300 350 280 C 330 270 320 230 280 260 C 260 280 220 310 200 290 C 180 270 160 280 140 280 C 110 280 90 240 90 210"
+      );
+  }
+  75% {
+      d: path(
+          "M 90 210 C 90 180 110 180 130 170 C 150 160 170 130 200 130 C 240 130 260 150 290 140 C 310 130 340 120 360 140 C 380 160 390 180 390 210 C 390 240 380 260 350 270 C 320 280 290 270 270 260 C 240 250 230 280 210 290 C 180 310 130 300 110 280 C 90 260 90 240 90 210"
+      );
+      transform: rotate(5deg);
+  }
+}

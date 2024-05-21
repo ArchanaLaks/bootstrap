@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Raleway:900");
+@import url(https://fonts.googleapis.com/css?family=Roboto:700);
+:root{
+    --gradient-color:linear-gradient(90deg,
+                    hsl(48,100%,50%)0%,
+                    hsl(28, 100%,54%, 100%));
+    --black-color:hsl(225,15%, 6%);
+    --reflection-color: hsla(48, 30%, 95%,.3);
+    --body-color:hsl(48,100%, 98%);
+    --body-font:"Montserrat", sans-serif;
+    --normal-font-size:1rem;
+    --first-color:hsl(217, 86%, 71%);
+    --background: #33837e;
+ --left-side: #5de2a3;
+ --card: #c7ffbc;
+ --card-line: #80ea69;
+ --button-color-3: #26850e;
+ --button-color-2: #379e1f;
+ --button-color-1: #56be3e;
+ --post: #dddde0;
+ --numbers: #838183;
+ --numbers-2: #aaa9ab;
+ --post-line: #757375;
+ --post-line2: #545354;
+ --dollar: #4b953b;
+ --background-dark: #2d3548;
+  --text-light: rgba(255,255,255,0.6);
+  --text-lighter: rgba(255,255,255,0.9);
+  --spacing-s: 8px;
+  --spacing-m: 16px;
+  --spacing-l: 24px;
+  --spacing-xl: 32px;
+  --spacing-xxl: 64px;
+  --width-container: 1200px;
+ 
+}
