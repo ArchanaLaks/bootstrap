@@ -1,3 +1,5 @@
+
+/* rotater divs */
 .nav{
     font-family:'Oswald', sans-serif;
     text-transform:uppercase;
@@ -35,6 +37,9 @@
   transform-origin: 50% 50%;
 transform: perspective(500px) rotateY(-40deg) scaleY(0.9) scaleX(1.15);
   height:100%;width:100%;}
+
+
+/* 1st div phone symbol ring on hover 2nd button rainbow colors mover on hover */
 
   /* phone ringer */
   .button {
@@ -119,7 +124,7 @@ transform: perspective(500px) rotateY(-40deg) scaleY(0.9) scaleX(1.15);
     }
   }
 
-  /* content shower */
+  /* content shower message shower buttons on hover */
 
 .content-shower{
     width: 100%;
@@ -271,6 +276,8 @@ transform: perspective(500px) rotateY(-40deg) scaleY(0.9) scaleX(1.15);
 
   }
 
+  /* yes no adjuster */
+
   .buttons-yn {
     display: flex;
     width: 380px;
@@ -337,7 +344,7 @@ transform: perspective(500px) rotateY(-40deg) scaleY(0.9) scaleX(1.15);
     color: #fff;
   }
   
-  /* sliding */
+  /* sliding auto cards animation */
   .cont {
     display: grid;
     place-items: center;
@@ -459,7 +466,7 @@ transform: perspective(500px) rotateY(-40deg) scaleY(0.9) scaleX(1.15);
       opacity: 0;
     }
   }
-/* image slider */
+/* image slider  on click sliding window*/
 
 
 label {

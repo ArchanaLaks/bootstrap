@@ -1,3 +1,4 @@
+/* white background images with a preview clickable images to show that image  */
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
 
 body{
@@ -181,8 +182,8 @@ ul li:nth-child(4) {
 
 
 
-/* 2nd */
-img2 {
+/* 2nd 2nd image  auto mover images */
+.img2 {
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	width: 100%;
 	min-height: 45rem;
