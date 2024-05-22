@@ -10,6 +10,7 @@ import { ImagerComponent } from './imager/imager.component';
 import { SliderComponent } from './slider/slider.component';
 import { AnimationComponent } from './animation/animation.component';
 import { Animation2Component } from './animation2/animation2.component';
+import { Animation3Component } from './animation3/animation3.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { Animation2Component } from './animation2/animation2.component';
     SliderComponent,
     AnimationComponent,
     Animation2Component,
+    Animation3Component,
   ],
   imports: [
     BrowserModule,

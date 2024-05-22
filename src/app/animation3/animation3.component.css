@@ -1,0 +1,147 @@
+/*  price reavealing animations*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Satisfy&display=swap');
+
+
+.section-prices {
+  padding: 1.5rem 1rem;
+  background-image: linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%);
+
+}
+.section-prices .section-header {
+  background-color: #FFF;
+  margin-bottom: 1rem;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  color: #555;
+  font-weight: 700;
+  box-shadow: 0 10px 35px -10px rgba(0, 0, 0, .3);
+}
+
+.list-boxs .card {
+  width: 32%;
+  text-align: center;
+  position: relative;
+  max-width: 300px;
+}
+
+.list-boxs .card .head,
+.list-boxs .card .body {
+  background-color: #FFF;
+  padding: 1.5rem 1rem;
+}
+
+.list-boxs .card .head {
+  color: #333;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  transform: translateY(30px);
+  transition: transform .3s linear;
+  border-bottom: 1px solid #F2F2F2;
+}
+.list-boxs .card:hover .head {
+  transform: translateY(0);
+  box-shadow: 0 -5px 10px rgba(0, 0, 0, .1);
+}
+
+.list-boxs .card .ticket {
+  color: #ec8383;
+  width: 80%;
+  margin: 0 auto;
+  padding: 1rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  height: 60px;
+  box-shadow: inset 0px 6px 6px -5px rgba(0, 0, 0, .25),
+              inset 0px -6px 6px -5px rgba(0, 0, 0, .25);
+}
+.list-boxs .starter .ticket {
+  background-color: greenyellow;
+}
+
+.list-boxs .card .body {
+  transform: translateY(-37px);
+  transition: transform .3s linear;
+}
+.list-boxs .card:hover .body {
+  transform: translateY(0);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+}
+
+.list-boxs .card p {
+  font-size: .95rem;
+  color: #333;
+  text-align: justify;
+}
+.list-boxs .card .btn {
+  margin-top: 2rem;
+  padding: .6rem 1rem;
+  outline: none;
+  font-size: .85rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  min-width: 160px;
+  border: 1px solid #555;
+  background-color: #555;
+  color: #333;
+  cursor: pointer;
+  transition: all .2s linear;
+}
+.list-boxs .card .btn:hover {
+  box-shadow: 0 5px 10px 1px rgba(0, 0, 0, .15);
+}
+
+.list-boxs .starter .btn {
+  background: greenyellow;
+  border-color: greenyellow;
+}
+
+
+
+/* flipper cards */
+.box{
+    width: 350px;
+    height: 250px;
+    position: relative;
+    }
+    .box .front,
+    .box .back{
+    position: absolute;
+    width: 350px;
+    height: 250px;
+    background: white;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    border-radius: 20px 20px 0 0;
+    border-radius: 20px;
+    box-shadow: 0 5px 30px rgba(163, 61, 21, 0.200 ),
+    0 -5px 30px rgba(115, 55, 212, 0.200);
+    transition: transform .4s;
+    }
+    .box .back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: perspective(800px) rotateX(-180deg);
+    }
+    .box .back p{
+    margin: 10px 20px;
+    text-align: center;
+    }
+    .box .front img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0 0 20px 20px;
+    position: absolute;
+    }
+    .box:hover .front{
+    transform: perspective(800px) rotateX(180deg);
+    }
+    .box:hover .back{
+    border-radius: 20px 20px 0 0;
+    transform: perspective(800px) rotateX(0);
+    }
