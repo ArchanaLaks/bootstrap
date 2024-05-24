@@ -11,6 +11,7 @@ import { SliderComponent } from './slider/slider.component';
 import { AnimationComponent } from './animation/animation.component';
 import { Animation2Component } from './animation2/animation2.component';
 import { Animation3Component } from './animation3/animation3.component';
+import { Animation4Component } from './animation4/animation4.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { Animation3Component } from './animation3/animation3.component';
     AnimationComponent,
     Animation2Component,
     Animation3Component,
+    Animation4Component,
   ],
   imports: [
     BrowserModule,
