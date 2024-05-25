@@ -12,6 +12,7 @@ import { AnimationComponent } from './animation/animation.component';
 import { Animation2Component } from './animation2/animation2.component';
 import { Animation3Component } from './animation3/animation3.component';
 import { Animation4Component } from './animation4/animation4.component';
+import { Animation5Component } from './animation5/animation5.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { Animation4Component } from './animation4/animation4.component';
     Animation2Component,
     Animation3Component,
     Animation4Component,
+    Animation5Component,
   ],
   imports: [
     BrowserModule,
